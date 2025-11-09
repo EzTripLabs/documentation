@@ -62,7 +62,7 @@
 
 ---
 
-### **1.2.2 Diagrama de Caso de Uso (Descrição textual)**
+### **1.2.2 Diagrama de Caso de Uso**
 
 No diagrama geral do EzTrip, os principais **atores** e **casos de uso** se relacionam da seguinte forma:
 
@@ -79,6 +79,8 @@ No diagrama geral do EzTrip, os principais **atores** e **casos de uso** se rela
 - **Participante**
 
   - [UC05] Registrar Gasto
+
+![Diagrama de Caso de Uso](image.png)
 
 ---
 
@@ -118,7 +120,7 @@ Abaixo estão os **5 casos de uso principais** do sistema **EzTrip**, sendo o **
 
 - **Sumário:** Permite ao usuário criar uma nova viagem, tornando-se o Administrador.
 - **Ator Primário:** Usuário
-- **Casos de Uso Associados:** UC01 (Login)
+- **Casos de Uso Associados:** [UC01] – Fazer Login
 - **Pré-condições:** O usuário deve estar autenticado.
 - **Fluxo Principal:**
 
@@ -142,7 +144,7 @@ Abaixo estão os **5 casos de uso principais** do sistema **EzTrip**, sendo o **
 
 - **Sumário:** Permite que o Administrador convide novos usuários por e-mail ou link.
 - **Ator Primário:** Administrador
-- **Casos de Uso Associados:** UC02
+- **Casos de Uso Associados:** [UC02] – Criar Viagem
 - **Pré-condições:** O usuário deve ser o Administrador da viagem ou possuir permissão “Convidar participantes”.
 - **Fluxo Principal:**
 
@@ -167,7 +169,7 @@ Abaixo estão os **5 casos de uso principais** do sistema **EzTrip**, sendo o **
 
 - **Sumário:** Permite ao Administrador gerenciar as permissões de acesso de cada participante nos módulos da viagem.
 - **Ator Primário:** Administrador
-- **Casos de Uso Associados:** UC02
+- **Casos de Uso Associados:** [UC02] – Criar Viagem
 - **Pré-condições:** O usuário deve ser o Administrador da viagem.
 - **Fluxo Principal:**
 
@@ -191,7 +193,7 @@ Abaixo estão os **5 casos de uso principais** do sistema **EzTrip**, sendo o **
 
 - **Sumário:** Permite registrar um gasto e dividir o valor entre os participantes.
 - **Ator Primário:** Participante
-- **Casos de Uso Associados:** UC01, UC02
+- **Casos de Uso Associados:** [UC02] – Criar Viagem
 - **Pré-condições:** O usuário deve estar autenticado e ter permissão de registrar gastos.
 - **Fluxo Principal:**
 
