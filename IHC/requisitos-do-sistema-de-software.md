@@ -110,7 +110,7 @@ Abaixo estão os **5 casos de uso principais** do sistema **EzTrip**, sendo o **
 - **Pós-condições:** O usuário está autenticado e com sessão ativa.
 - **Requisitos Associados:** RF010, RNF004
 - **Regras de Negócio:** RN001, RN002
-- **Interface:** Tela de Login EzTrip (I001)
+- **Interface:** Tela de Login (I001)
 
 ---
 
@@ -197,7 +197,7 @@ Abaixo estão os **5 casos de uso principais** do sistema **EzTrip**, sendo o **
 
   1. O participante seleciona “Adicionar Gasto”.
   2. Informa descrição, valor, moeda e pessoas envolvidas.
-  3. O sistema divide automaticamente o valor e atualiza o saldo de cada participante.
+  3. O sistema divide automaticamente o valor e atualiza o balanço de cada participante.
   4. O sistema registra a ação no log da viagem.
 
 - **Fluxos Alternativos:**
@@ -211,12 +211,12 @@ Abaixo estão os **5 casos de uso principais** do sistema **EzTrip**, sendo o **
 
 ---
 
-![Tela de Login EzTrip (I001)](assets/image.png)
+![Tela de Login (I001)](assets/tela-de-login.png)
 ![Tela de Viagens (Vazia) (I002)](assets/tela-de-viagens-vazia.png)
 ![Tela de Criar Viagem - Step 1 (I003)](assets/tela-de-criacao-de-viagem-step-1.png)
 ![Tela de Criar Viagem - Step 2 (I004)](assets/tela-de-criacao-de-viagem-step-2.png)
 ![Tela de Viagem Recém Criada (I005)](assets/tela-de-viagem-recem-criada.png)
 ![Tela de Participantes (I006)](assets/tela-de-participantes.png)
-![Tela de Participantes + (Convite por link) (I007)](assets/tela-de-participantes-com-convite-po-link.png)
+![Tela de Participantes + (Convite por link) (I007)](assets/tela-de-participantes-com-convite-por-link.png)
 ![Tela de Participantes + (Convite por e-mail) (I008)](assets/tela-de-participantes-com-convite-por-email.png)
 ![Tela de Perfil de Participante (I009)](assets/tela-de-perfil-de-participante.png)
