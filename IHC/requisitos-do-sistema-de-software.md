@@ -80,7 +80,7 @@ No diagrama geral do EzTrip, os principais **atores** e **casos de uso** se rela
 
   - [UC05] Registrar Gasto
 
-![Diagrama de Caso de Uso](use-case-diagram.png)
+![Diagrama de Caso de Uso](assets/use-case-diagram.png)
 
 ---
 
@@ -212,47 +212,57 @@ Abaixo estão os **5 casos de uso principais** do sistema **EzTrip**, sendo o **
 - **Interface:** Tela de Gastos (I005)
 
 ---
+
 ### Tela de Login (I001)
+
 <div style="text-align:center;">
   <img src="assets/tela-de-login.png" alt="Tela de Login (I001)" style="width:400px;max-width:100%;height:auto;margin:8px 0;" />
 </div>
 
 ### Tela de Viagens (Vazia) (I002)
+
 <div style="text-align:center;">
   <img src="assets/tela-de-viagens-vazia.png" alt="Tela de Viagens (Vazia) (I002)" style="width:400px;max-width:100%;height:auto;margin:8px 0;" />
 </div>
 
 ### Tela de Criar Viagem - Step 1 (I003)
+
 <div style="text-align:center;">
   <img src="assets/tela-de-criacao-de-viagem-step-1.png" alt="Tela de Criar Viagem - Step 1 (I003)" style="width:400px;max-width:100%;height:auto;margin:8px 0;" />
 </div>
 
 ### Tela de Criar Viagem - Step 2 (I004)
+
 <div style="text-align:center;">
   <img src="assets/tela-de-criacao-de-viagem-step-2.png" alt="Tela de Criar Viagem - Step 2 (I004)" style="width:400px;max-width:100%;height:auto;margin:8px 0;" />
 </div>
 
 ### Tela de Viagem Recém Criada (I005)
+
 <div style="text-align:center;">
   <img src="assets/tela-de-viagem-recem-criada.png" alt="Tela de Viagem Recém Criada (I005)" style="width:400px;max-width:100%;height:auto;margin:8px 0;" />
 </div>
 
 ### Tela de Participantes (I006)
+
 <div style="text-align:center;">
   <img src="assets/tela-de-participantes.png" alt="Tela de Participantes (I006)" style="width:400px;max-width:100%;height:auto;margin:8px 0;" />
 </div>
 
 ### Tela de Participantes + (Convite por link) (I007)
+
 <div style="text-align:center;">
   <img src="assets/tela-de-participantes-com-convite-por-link.png" alt="Tela de Participantes + (Convite por link) (I007)" style="width:400px;max-width:100%;height:auto;margin:8px 0;" />
 </div>
 
 ### Tela de Participantes + (Convite por e-mail) (I008)
+
 <div style="text-align:center;">
   <img src="assets/tela-de-participantes-com-convite-por-email.png" alt="Tela de Participantes + (Convite por e-mail) (I008)" style="width:400px;max-width:100%;height:auto;margin:8px 0;" />
 </div>
 
 ### Tela de Perfil de Participante (I009)
+
 <div style="text-align:center;">
   <img src="assets/tela-de-perfil-de-participante.png" alt="Tela de Perfil de Participante (I009)" style="width:400px;max-width:100%;height:auto;margin:8px 0;" />
 </div>
