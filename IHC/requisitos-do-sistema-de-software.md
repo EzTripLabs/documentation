@@ -7,7 +7,7 @@
 | **[RF001]** | Criar Viagem                   | Essencial  | O sistema deve permitir que um usuário autenticado crie uma nova viagem informando nome, destino, datas e participantes. O criador torna-se o Administrador da viagem. |
 | **[RF002]** | Convidar Participantes         | Essencial  | O Administrador ou participante com permissão deve poder gerar convites por e-mail ou link para que outros usuários ingressem na viagem.                               |
 | **[RF003]** | Gerenciar Permissões           | Importante | O Administrador deve poder definir e ajustar permissões por módulo (Gastos, Roteiro, Tarefas, Enquetes, Lembranças).                                                   |
-| **[RF004]** | Registrar Gastos               | Essencial  | O sistema deve permitir o registro de gastos, definindo valor, pagador, participantes envolvidos e categoria. O sistema deve calcular automaticamente a divisão.       |
+| **[RF004]** | Adicionar Gastos               | Essencial  | O sistema deve permitir o registro de gastos, definindo valor, pagador, participantes envolvidos e categoria. O sistema deve calcular automaticamente a divisão.       |
 | **[RF005]** | Criar e Gerenciar Roteiro      | Importante | O sistema deve permitir criar e editar eventos da viagem, com data, hora e local, e exibir visualizações por dia e por período total.                                  |
 | **[RF006]** | Criar e Atribuir Tarefas       | Importante | O sistema deve permitir criar tarefas com título, descrição, prazo e responsáveis. Deve permitir marcar como concluída.                                                |
 | **[RF007]** | Criar Enquetes                 | Desejável  | O sistema deve permitir criar enquetes com opções de voto e prazo de encerramento, registrando resultados.                                                             |
@@ -55,7 +55,7 @@
 
 | **Ator**                        | **Descrição**                                                                                                                                                                              |
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Usuário**                     | Pessoa autenticada que utiliza o EzTrip para planejar e participar de viagens. Pode criar viagens, visualizar roteiros, registrar gastos e interagir com o grupo conforme suas permissões. |
+| **Usuário**                     | Pessoa autenticada que utiliza o EzTrip para planejar e participar de viagens. Pode criar viagens, visualizar roteiros, adicionar gastos e interagir com o grupo conforme suas permissões. |
 | **Administrador (Owner)**       | Usuário que cria a viagem. Possui autoridade total sobre o grupo: gerencia permissões, convites, finalização da viagem e exclusões.                                                        |
 | **Participante**                | Usuário convidado para uma viagem. Suas ações são controladas por permissões atribuídas pelo Administrador (ex: criar tarefas, lançar gastos, votar em enquetes).                          |
 | **Convidado (não autenticado)** | Pessoa que recebeu um link de convite, mas ainda não está vinculada à viagem. Pode solicitar acesso mediante aprovação.                                                                    |
@@ -78,7 +78,7 @@ No diagrama geral do EzTrip, os principais **atores** e **casos de uso** se rela
 
 - **Participante**
 
-  - [UC05] Registrar Gasto
+  - [UC05] Adicionar Gasto
 
 ![Diagrama de Caso de Uso](assets/use-case-diagram.png)
 
@@ -189,12 +189,12 @@ Abaixo estão os **5 casos de uso principais** do sistema **EzTrip**, sendo o **
 
 ---
 
-#### **[UC05] – Registrar Gasto**
+#### **[UC05] – Adicionar Gasto**
 
 - **Sumário:** Permite registrar um gasto e dividir o valor entre os participantes.
 - **Ator Primário:** Participante
 - **Casos de Uso Associados:** [UC02] – Criar Viagem
-- **Pré-condições:** O usuário deve estar autenticado e ter permissão de registrar gastos.
+- **Pré-condições:** O usuário deve estar autenticado e ter permissão de adicionar gastos.
 - **Fluxo Principal:**
 
   1. O participante seleciona “Adicionar Gasto”.
@@ -209,7 +209,7 @@ Abaixo estão os **5 casos de uso principais** do sistema **EzTrip**, sendo o **
 - **Pós-condições:** Gasto adicionado à viagem e saldo atualizado.
 - **Requisitos Associados:** RF004
 - **Regras de Negócio:** RN001, RN005, RN007
-- **Interface:** Tela de Gastos (I005)
+- **Interface:** Tela de Adicionar Gasto (I010)
 
 ---
 
@@ -265,4 +265,10 @@ Abaixo estão os **5 casos de uso principais** do sistema **EzTrip**, sendo o **
 
 <div style="text-align:center;">
   <img src="assets/tela-de-perfil-de-participante.png" alt="Tela de Perfil de Participante (I009)" style="width:400px;max-width:100%;height:auto;margin:8px 0;" />
+</div>
+
+### Tela de Adicionar Gasto (I010)
+
+<div style="text-align:center;">
+  <img src="assets/tela-de-adicionar-gasto.png" alt="Tela de Adicionar Gasto (I010)" style="width:400px;max-width:100%;height:auto;margin:8px 0;" />
 </div>
