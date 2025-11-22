@@ -112,7 +112,15 @@ Abaixo estão os **5 casos de uso principais** do sistema **EzTrip**, sendo o **
 - **Pós-condições:** O usuário está autenticado e com sessão ativa.
 - **Requisitos Associados:** RF010, RNF004
 - **Regras de Negócio:** RN001, RN002
-- **Interface:** Tela de Login (I001)
+- **Interface:** [Tela de Login (I001)] -> [Tela de Viagens (Vazia) (I002)]
+
+#### Tela de Login (I001) & Tela de Viagens (Vazia) (I002)
+
+<div style="display:flex;gap:1rem;text-align:center;">
+  <img src="assets/tela-de-login.png" alt="Tela de Login (I001)" style="width:375px;max-width:100%;height:auto;margin:8px 0;" />
+
+  <img src="assets/tela-de-viagens-vazia.png" alt="Tela de Viagens (Vazia) (I002)" style="width:375px;max-width:100%;height:auto;margin:8px 0;" />
+</div>
 
 ---
 
@@ -137,6 +145,16 @@ Abaixo estão os **5 casos de uso principais** do sistema **EzTrip**, sendo o **
 - **Requisitos Associados:** RF001
 - **Regras de Negócio:** RN001, RN002
 - **Interface:** [Tela de Viagens (Vazia) (I002)] -> [Tela de Criar Viagem - Step 1 (I003)] -> [Tela de Criar Viagem - Step 2 (I004)]
+
+### Tela de Criar Viagem - Step 1 (I003) & Tela de Criar Viagem - Step 2 (I004) & Tela de Viagem Recém Criada (I005)
+
+<div style="display:flex;gap:1rem;text-align:center;">
+  <img src="assets/tela-de-criacao-de-viagem-step-1.png" alt="Tela de Criar Viagem - Step 1 (I003)" style="width:240px;max-width:100%;height:auto;margin:8px 0;" />
+
+  <img src="assets/tela-de-criacao-de-viagem-step-2.png" alt="Tela de Criar Viagem - Step 2 (I004)" style="width:240px;max-width:100%;height:auto;margin:8px 0;" />
+
+  <img src="assets/tela-de-viagem-recem-criada.png" alt="Tela de Viagem Recém Criada (I005)" style="width:240px;max-width:100%;height:auto;margin:8px 0;" />
+</div>
 
 ---
 
@@ -163,6 +181,16 @@ Abaixo estão os **5 casos de uso principais** do sistema **EzTrip**, sendo o **
 - **Regras de Negócio:** RN004, RN008
 - **Interface:** [Tela de Participantes (I006)] -> [Tela de Participantes + (Convite por link) (I007)] -> [Tela de Participantes + (Convite por e-mail) (I008)]
 
+### Tela de Participantes (I006) & Tela de Participantes + (Convite por link) (I007) & Tela de Participantes + (Convite por e-mail) (I008)
+
+<div style="display:flex;gap:1rem;text-align:center;">
+  <img src="assets/tela-de-participantes.png" alt="Tela de Participantes (I006)" style="width:240px;max-width:100%;height:auto;margin:8px 0;" />
+
+  <img src="assets/tela-de-participantes-com-convite-por-link.png" alt="Tela de Participantes + (Convite por link) (I007)" style="width:240px;max-width:100%;height:auto;margin:8px 0;" />
+
+  <img src="assets/tela-de-participantes-com-convite-por-email.png" alt="Tela de Participantes + (Convite por e-mail) (I008)" style="width:240px;max-width:100%;height:auto;margin:8px 0;" />
+</div>
+
 ---
 
 #### **[UC04] – Definir Permissões**
@@ -173,7 +201,7 @@ Abaixo estão os **5 casos de uso principais** do sistema **EzTrip**, sendo o **
 - **Pré-condições:** O usuário deve ser o Administrador da viagem.
 - **Fluxo Principal:**
 
-  1. O Administrador acessa o módulo “Partipantes”.
+  1. O Administrador acessa o módulo “Participantes”.
   2. O sistema exibe a lista de participantes.
   3. O Administrador seleciona um participante e ajusta permissões por módulo (ex: Gastos, Roteiro, Enquetes).
   4. O sistema salva as novas configurações e registra o log da alteração.
@@ -186,6 +214,13 @@ Abaixo estão os **5 casos de uso principais** do sistema **EzTrip**, sendo o **
 - **Requisitos Associados:** RF003
 - **Regras de Negócio:** RN002, RN003, RN008
 - **Interface:** [Tela de Participantes (I006)] -> [Tela de Perfil de Participante (I009)]
+
+
+### Tela de Perfil de Participante (I009)
+
+<div style="text-align:center;">
+  <img src="assets/tela-de-perfil-de-participante.png" alt="Tela de Perfil de Participante (I009)" style="width:350px;max-width:100%;height:auto;margin:8px 0;" />
+</div>
 
 ---
 
@@ -211,64 +246,16 @@ Abaixo estão os **5 casos de uso principais** do sistema **EzTrip**, sendo o **
 - **Regras de Negócio:** RN001, RN005, RN007
 - **Interface:** Tela de Adicionar Gasto (I010)
 
----
-
-### Tela de Login (I001)
-
-<div style="text-align:center;">
-  <img src="assets/tela-de-login.png" alt="Tela de Login (I001)" style="width:400px;max-width:100%;height:auto;margin:8px 0;" />
-</div>
-
-### Tela de Viagens (Vazia) (I002)
-
-<div style="text-align:center;">
-  <img src="assets/tela-de-viagens-vazia.png" alt="Tela de Viagens (Vazia) (I002)" style="width:400px;max-width:100%;height:auto;margin:8px 0;" />
-</div>
-
-### Tela de Criar Viagem - Step 1 (I003)
-
-<div style="text-align:center;">
-  <img src="assets/tela-de-criacao-de-viagem-step-1.png" alt="Tela de Criar Viagem - Step 1 (I003)" style="width:400px;max-width:100%;height:auto;margin:8px 0;" />
-</div>
-
-### Tela de Criar Viagem - Step 2 (I004)
-
-<div style="text-align:center;">
-  <img src="assets/tela-de-criacao-de-viagem-step-2.png" alt="Tela de Criar Viagem - Step 2 (I004)" style="width:400px;max-width:100%;height:auto;margin:8px 0;" />
-</div>
-
-### Tela de Viagem Recém Criada (I005)
-
-<div style="text-align:center;">
-  <img src="assets/tela-de-viagem-recem-criada.png" alt="Tela de Viagem Recém Criada (I005)" style="width:400px;max-width:100%;height:auto;margin:8px 0;" />
-</div>
-
-### Tela de Participantes (I006)
-
-<div style="text-align:center;">
-  <img src="assets/tela-de-participantes.png" alt="Tela de Participantes (I006)" style="width:400px;max-width:100%;height:auto;margin:8px 0;" />
-</div>
-
-### Tela de Participantes + (Convite por link) (I007)
-
-<div style="text-align:center;">
-  <img src="assets/tela-de-participantes-com-convite-por-link.png" alt="Tela de Participantes + (Convite por link) (I007)" style="width:400px;max-width:100%;height:auto;margin:8px 0;" />
-</div>
-
-### Tela de Participantes + (Convite por e-mail) (I008)
-
-<div style="text-align:center;">
-  <img src="assets/tela-de-participantes-com-convite-por-email.png" alt="Tela de Participantes + (Convite por e-mail) (I008)" style="width:400px;max-width:100%;height:auto;margin:8px 0;" />
-</div>
-
-### Tela de Perfil de Participante (I009)
-
-<div style="text-align:center;">
-  <img src="assets/tela-de-perfil-de-participante.png" alt="Tela de Perfil de Participante (I009)" style="width:400px;max-width:100%;height:auto;margin:8px 0;" />
-</div>
-
 ### Tela de Adicionar Gasto (I010)
 
 <div style="text-align:center;">
-  <img src="assets/tela-de-adicionar-gasto.png" alt="Tela de Adicionar Gasto (I010)" style="width:400px;max-width:100%;height:auto;margin:8px 0;" />
+  <img src="assets/tela-de-adicionar-gasto.png" alt="Tela de Adicionar Gasto (I010)" style="width:350px;max-width:100%;height:auto;margin:8px 0;" />
+</div>
+
+---
+
+### Mapa de Navegação
+
+<div style="text-align:center;">
+  <img src="assets/mapa-de-navegacao.png" alt="Mapa de Navegação" style="max-width:100%;height:auto" />
 </div>
