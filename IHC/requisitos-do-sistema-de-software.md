@@ -254,8 +254,29 @@ Abaixo estão os **5 casos de uso principais** do sistema **EzTrip**, sendo o **
 
 ---
 
-### Mapa de Navegação
+### 7 - Mapa de Navegação
 
 <div style="text-align:center;">
   <img src="assets/mapa-de-navegacao.png" alt="Mapa de Navegação" style="max-width:100%;height:auto" />
 </div>
+
+### 8 - Design Pattern
+
+<div style="text-align:center;">
+  <img src="assets/design_pattern.png" alt="Design Pattern" style="max-width:100%;height:auto" />
+</div>
+
+### 9 - Heuristicas Aplicadas
+
+| Caso de Uso | Telas Envolvidas | Heurísticas de Nielsen Presentes | Justificativa |
+|-------------|------------------|----------------------------------|---------------|
+| **UC01 – Fazer Login** | I001 (Login), I002 (Viagens Vazia) | **#1 Visibilidade do status do sistema**, **#5 Prevenção de erros**, **#9 Ajuda para reconhecer e recuperar de erros** | O sistema deve mostrar carregamento e validação (#1), impedir envio de campos vazios (#5), e exibir mensagens claras para credenciais inválidas ou usuário inativo (#9). |
+| **UC02 – Criar Viagem** | I003 (Step 1), I004 (Step 2), I005 (Viagem Criada) | **#3 Controle e liberdade do usuário**, **#5 Prevenção de erros**, **#6 Reconhecimento em vez de memorização**, **#8 Design estético e minimalista** | O usuário deve poder voltar/trocar etapas (#3), ter validações de dados (#5), ver informações já preenchidas sem precisar lembrar (#6) e ter um fluxo limpo e passo a passo (#8). |
+| **UC03 – Convidar Participantes** | I006, I007, I008 | **#1 Visibilidade do status do sistema**, **#4 Consistência e padrões**, **#9 Ajuda na recuperação de erros**, **#10 Ajuda e documentação** | Convites enviados, status e links devem ser visíveis (#1), componentes de convite devem manter padrão entre telas (#4), erros como link expirado devem ser compreensíveis (#9), e instruções sobre como convidar facilitam o uso (#10). |
+| **UC04 – Definir Permissões** | I009 (Perfil do Participante) | **#2 Correspondência com o mundo real**, **#4 Consistência e padrões**, **#7 Flexibilidade e eficiência de uso** | Permissões devem usar linguagem clara e familiar (#2), switches/botões devem seguir padrões (#4), e administradores devem ajustar permissões de forma rápida e eficiente (#7). |
+| **UC05 – Adicionar Gasto** | I010 (Adicionar Gasto) | **#1 Visibilidade do status**, **#6 Reconhecimento em vez de memorização**, **#5 Prevenção de erros**, **#7 Flexibilidade e eficiência** | Valores, participantes e divisão devem ser claros (#1), o usuário não deve precisar lembrar quem participa (#6), validações evitam erros de valor/campo (#5), e preenchimento automático da divisão aumenta eficiência (#7). |
+              |
+
+### 10 - Lei da Psicologia aplicada
+
+### 11 - Principio de Gestat
