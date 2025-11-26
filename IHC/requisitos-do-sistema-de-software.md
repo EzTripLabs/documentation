@@ -1,3 +1,11 @@
+## **Integrantes**
+ENZO NASCIMENTO ESTRELA ALVES 
+GABRIEL VITOR DOS SANTOS  
+THIAGO SOARES SOUSA  
+YURI FURTADO RODRIGUES 
+LEONARDO SHINKO YONAMINE 
+
+
 ## 🧩 **1. Requisitos do Sistema de Software**
 
 ### 1.1.2 Requisitos Funcionais
@@ -279,4 +287,88 @@ Abaixo estão os **5 casos de uso principais** do sistema **EzTrip**, sendo o **
 
 ### 10 - Lei da Psicologia aplicada
 
+
+Nos baseamos no aplicativo da Nubank para idealizar a UX da EzTrip.
+
+ **Como o Nubank aplica a Lei de Jakob?**
+
+- **Layout previsível:**  
+  O Nubank utiliza uma estrutura vertical de navegação, com cartões e seções empilhadas — exatamente como a maioria dos apps modernos de finanças e serviços. O usuário já reconhece esse padrão.
+- **Ações principais destacadas:**  
+  Botões como “Pagar”, “Transferir” e “Depositar” usam o padrão de botão flutuante ou botão primário destacado, modelo presente em dezenas de aplicativos bancários e de pagamentos.
+- **Ícones universais:**  
+  Ícones como o de configuração, ajuda, cartão, perfil e notificações seguem o padrão visual adotado pela maioria dos aplicativos, evitando símbolos novos ou ambíguos.
+- **Terminologia familiar:**  
+  O Nubank não reinventa nomes para funções básicas. Em vez disso, usa termos que os usuários já esperam: *fatura*, *limite*, *extrato*, *cartão virtual*, *configurações* — respeitando o vocabulário já consolidado no mercado.
+- **Fluxos iguais aos de outros apps financeiros:**  
+  Movimentações como consultar saldo, ver histórico, bloquear cartão ou ajustar limite seguem a mesma lógica de outros apps bancários, reduzindo fricção.
+- **Feedback imediato:**  
+  Mensagens de erro, carregamento e confirmação aparecem de forma padrão e previsível, assim como em outros apps. O usuário já sabe o que esperar.
+
+Ao aplicar a Lei de Jakob, o Nubank evita que o usuário “aprenda um novo app”.  
+Em vez disso, ele se apoia em hábitos e modelos mentais já existentes.
+
+Isso gera:
+- menor esforço cognitivo  
+- navegação mais rápida  
+- menos erros  
+- maior sensação de controle  
+- confiança no sistema  
+
+**A seguir, apresenta-se a relação entre os protótipos desenvolvidos e a aplicação da Lei de Jakob no contexto do projeto:**
+
+### [UC01] – Fazer Login
+- **Lei de Jakob Aplicada:** A tela segue o padrão amplamente utilizado em aplicativos como o Nubank, com campos simples e botão destacado, evitando inovações desnecessárias.
+- **Como o Protótipo Respeita:**
+  - Campos "E-mail" e "Senha" organizados verticalmente.
+  - Mensagens de erro imediatas para credenciais inválidas.
+  - Botão primário com estilo já familiar ao usuário.
+  - Redirecionamento imediato após login bem-sucedido.
+
+---
+
+### [UC02] – Criar Viagem
+- **Lei de Jakob Aplicada:** O fluxo dividido em etapas reflete modelos consolidados de criação de elementos em apps modernos.
+- **Como o Protótipo Respeita:**
+  - Processo guiado em “Step 1” e “Step 2”, semelhante ao onboarding do Nubank.
+  - Campos apresentados em ordem natural e previsível.
+  - Navegação clara com botões “Avançar” e “Concluir”.
+
+---
+
+### [UC03] – Convidar Participantes
+- **Lei de Jakob Aplicada:** A escolha entre “Convite por e-mail” e “Gerar link” replica padrões de compartilhamento amplamente conhecidos.
+- **Como o Protótipo Respeita:**
+  - Botões separados para cada tipo de convite, como em apps de colaboração.
+  - Modelo mental similar ao compartilhamento de links do WhatsApp, Google Docs e Nubank.
+  - Tratamento claro para links expirados, seguindo práticas padrão.
+
+---
+
+### [UC04] – Definir Permissões
+- **Lei de Jakob Aplicada:** O gerenciamento de permissões segue modelos usados em menus de configurações de apps consolidados.
+- **Como o Protótipo Respeita:**
+  - Lista de participantes similar a listas de configurações do Nubank.
+  - Permissões apresentadas em switches/seletores familiares ao usuário.
+  - Tela de perfil organizada de forma já esperada em aplicativos modernos.
+
+---
+
+### [UC05] – Adicionar Gasto
+- **Lei de Jakob Aplicada:** O fluxo de criação de gastos segue padrões de registro de transações presentes em apps financeiros.
+- **Como o Protótipo Respeita:**
+  - Campos de descrição, valor, moeda e participantes dispostos de forma linear e previsível.
+  - Botão de confirmação destacado, igual ao padrão de transações do Nubank.
+
 ### 11 - Principio de Gestat
+
+## Princípio de Gestalt aplicado ao projeto
+
+**Princípio da Proximidade**
+O princípio de Gestalt selecionado para representar o projeto EzTrip é o Princípio da Proximidade. Ele estabelece que elementos posicionados próximos uns dos outros tendem a ser percebidos como pertencentes ao mesmo grupo, facilitando a interpretação visual e a organização mental das informações apresentadas.
+
+Nos protótipos do EzTrip, a aplicação desse princípio é evidente na forma como campos, botões e seções são dispostos em blocos claramente definidos. Nos formulários de criação de viagem e de registro de gastos, por exemplo, os elementos relacionados aparecem agrupados — como nome da viagem, destino e datas; ou descrição do gasto, valor e participantes envolvidos. Isso permite que o usuário compreenda rapidamente as etapas do fluxo sem esforço cognitivo adicional.
+
+Da mesma forma, nas telas de gerenciamento de participantes e permissões, os itens relacionados permanecem próximos, reforçando sua conexão funcional. Esse agrupamento visual auxilia o usuário a identificar rapidamente as ações possíveis dentro de cada módulo e reduz ambiguidades na navegação.
+
+Ao adotar o Princípio da Proximidade como base estrutural dos protótipos, o projeto fortalece a clareza visual, melhora a usabilidade e cria uma experiência mais intuitiva. Dessa forma, a organização dos elementos contribui diretamente para a consistência e eficiência do EzTrip como ferramenta colaborativa de viagens.
