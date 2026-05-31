@@ -1,74 +1,85 @@
-# Diagrama de Classes — EzTrip (Dominio)
+# Class Diagram — EzTrip (Domain)
 
 ```mermaid
 classDiagram
-    class Usuario {
-        +criar(nome, email, senha) Usuario
-        +verificarEmail(token)
-        +alterarIdioma(idioma)
+    class User {
+        +Name: string
+        +Email: string
+        +Language: string
+        +Active: bool
+        +AvatarPath: string
+        +AvatarColor: string
+        +Create()
+        +VerifyEmail()
+        +ChangeLanguage()
     }
 
-    class Viagem {
-        +criar(nome, destino, inicio, fim, dono) Viagem
-        +alterarInformacoes(nome, destino, inicio, fim)
-        +finalizar()
+    class Trip {
+        +Name: string
+        +Destination: string
+        +StartAt: DateTime
+        +EndAt: DateTime
+        +Finished: bool
+        +Create()
+        +UpdateInfo()
+        +Finish()
     }
 
-    class Participante {
-        +criarComoAdmin(viagem, usuario) Participante
-        +criarComoMembro(viagem, usuario) Participante
-        +remover()
+    class Participant {
+        +IsAdmin: bool
+        +Active: bool
+        +CreateAsAdmin()
+        +CreateAsMember()
+        +Remove()
     }
 
-    class Convite {
-        +gerar(viagem) Convite
-        +solicitarAcesso(usuario)
-        +aprovar(por)
-        +rejeitar(por)
+    class Invitation {
+        +ExpiresAt: DateTime
+        +Revoked: bool
+        +Create()
+        +IsValid()
+        +Revoke()
     }
 
-    class Gasto {
-        +criar(titulo, valor, categoria, moeda, pagador, participantes) Gasto
-        +editar(titulo, valor, categoria)
-        +excluir()
+    class Expense {
+        +Title: string
+        +Description: string
+        +Category: string
+        +TotalAmount: decimal
+        +Currency: string
+        +IsPrivate: bool
+        +Create()
+        +Edit()
+        +Delete()
     }
 
-    class Evento {
-        +criar(titulo, data, local) Evento
-        +editar(titulo, data, local)
-        +excluir()
-        +adicionarParticipante(participante)
+    class Event {
+        +Name: string
+        +Description: string
+        +Address: string
+        +StartAt: DateTime
+        +Create()
+        +Edit()
+        +Delete()
+        +AddParticipant()
     }
 
-    class ChecklistMala {
-        +aplicarTemplate()
-        +adicionarCategoria(nome)
-        +removerCategoria(categoria)
-        +adicionarItem(categoria, descricao)
-        +editarItem(item, descricao)
-        +marcarItemPronto(item)
-        +removerItem(item)
+    class PackingList {
+        +Create()
+        +ApplyTemplate()
+        +AddCategory()
+        +RemoveCategory()
+        +AddItem()
+        +EditItem()
+        +MarkItemAsDone()
+        +RemoveItem()
     }
 
-    Usuario "1" --> "*" Participante : possui
-    Viagem "1" --> "*" Participante : contem
-    Viagem "1" --> "*" Convite : gera
-    Viagem "1" --> "*" Gasto : registra
-    Viagem "1" --> "*" Evento : agenda
-    Viagem "1" --> "*" ChecklistMala : organiza
-    Usuario "1" --> "*" ChecklistMala : gerencia
-    ChecklistMala "1" --> "*" Categoria : agrupa
-    Categoria "1" --> "*" Item : contem
-
-    class Categoria {
-        +criar(nome)
-        +remover()
-    }
-
-    class Item {
-        +criar(descricao)
-        +editar(descricao)
-        +marcarPronto()
-        +remover()
-    }
+    User "1" --> "*" Participant : has
+    Trip "1" --> "*" Participant : contains
+    Trip "1" --> "*" Invitation : generates
+    Trip "1" --> "*" Expense : records
+    Trip "1" --> "*" Event : schedules
+    Trip "1" --> "*" PackingList : organizes
+    User "1" --> "*" PackingList : manages
 ```
